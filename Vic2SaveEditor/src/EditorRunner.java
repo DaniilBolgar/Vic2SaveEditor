@@ -2,7 +2,13 @@ import java.util.Scanner;
 
 public class EditorRunner {
 	public static void main(String[] args) {
-		Scanner console = new Scanner(System.in);
+		String param;
+		if (args.length == 0) {
+			param = System.in.toString();
+		} else {
+			param = args[0];
+		}
+		Scanner console = new Scanner(param);
 		SaveFile sf = new SaveFile();
 		String path = console.nextLine();
 		sf.readFile(path);
