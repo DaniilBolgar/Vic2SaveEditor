@@ -6,4 +6,5 @@ package savefile;
  *
  */
 public class Node {
+	private Node parent;
 }

@@ -1,5 +1,5 @@
 package savefile;
 
-public class ContainerNode {
+public class ContainerNode extends Node {
 
 }
